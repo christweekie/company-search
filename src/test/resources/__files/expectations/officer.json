@@ -1,0 +1,24 @@
+{
+  "address": {
+    "premises": "5",
+    "postal_code": "SW20 0DP",
+    "country": "England",
+    "locality": "London",
+    "address_line_1": "Cranford Close"
+  },
+  "name": "BOXALL, Sarah Victoria",
+  "appointed_on": "2008-02-11",
+  "officer_role": "secretary",
+  "links": {
+    "officer": {
+      "appointments": "/officers/4R8_9bZ44w0_cRlrxoC-wRwaMiF/appointments"
+    }
+  },
+  "date_of_birth": {
+    "month": 8,
+    "year": 1969
+  },
+  "occupation": "Finance And Accounting",
+  "country_of_residence": "United States",
+  "nationality": "American"
+}

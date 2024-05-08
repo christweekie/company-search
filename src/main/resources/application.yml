@@ -1,0 +1,64 @@
+info:
+  app:
+    name: Spring Exercise
+    version: 1.0
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, beans, conditions, mappings, loggers, metrics
+      base-path: /
+  endpoint:
+    beans:
+      cache:
+        time-to-live: 10s
+    health:
+      show-details: always
+    env:
+      show-values: always
+
+spring:
+  h2:
+    console:
+      enabled: true
+  application:
+    name: spring-boot-app
+  datasource:
+   url: jdbc:h2:file:./db/demo
+   driverClassName: org.h2.Driver
+   username: sa
+   password: ${H2_PASSWORD:password}
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update # Tables creation from JPA definitions. Would want flyway / liquibase to manage for a serious application.
+    open-in-view: false
+#     properties:
+#       jakarta.persistence:
+#         schema-generation:
+#           scripts:
+#             action: create
+#             create-target: create.sql
+#             create-source: metadata
+
+health:
+  default-ping-path: /ping
+
+web:
+  client:
+    connect-timeout-ms: 20000
+    read-timeout-ms: 5000
+    write-timeout-ms: 5000
+    document-byte-buffer-size: 20971520
+
+secret-api-key: ${SECRET_API_KEY}
+
+base:
+  search-url: "https://exercise.trunarrative.cloud/TruProxyAPI/rest/Companies/v1/"
+

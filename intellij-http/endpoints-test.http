@@ -1,0 +1,23 @@
+###
+POST http://localhost:8080/companyofficers?activeOnly=false
+Content-Type: application/json
+
+{ "companyNumber": "10241297" }
+
+###
+POST http://localhost:8080/companyofficers?activeOnly=true
+Content-Type: application/json
+
+{ "companyName": "BBC" }
+
+### Gives a 400 - validation of the parameters
+POST http://localhost:8080/companyofficers?activeOnly=false
+Content-Type: application/json
+
+{  "companyNumber": "" }
+
+### Gives a 400 - JSR 303 validation of company number length
+POST http://localhost:8080/companyofficers?activeOnly=false
+Content-Type: application/json
+
+{ "companyNumber": "102412923236232381368127" }

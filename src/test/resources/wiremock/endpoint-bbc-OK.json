@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/TruProxyAPI/rest/Companies/v1/Search?Query=06500244"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "bbc-company.json"
+  }
+}

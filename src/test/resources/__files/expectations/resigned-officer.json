@@ -1,0 +1,25 @@
+{
+  "address": {
+    "premises": "The Leeming Building",
+    "postal_code": "LS2 7JF",
+    "country": "England",
+    "locality": "Leeds",
+    "address_line_1": "Vicar Lane"
+  },
+  "name": "ANTLES, Kerri",
+  "appointed_on": "2017-04-01",
+  "resigned_on": "2018-02-12",
+  "officer_role": "director",
+  "links": {
+    "officer": {
+      "appointments": "/officers/4R8_9bZ44w0_cRlrxoC-wRwaMiE/appointments"
+    }
+  },
+  "date_of_birth": {
+    "month": 6,
+    "year": 1969
+  },
+  "occupation": "Finance And Accounting",
+  "country_of_residence": "United States",
+  "nationality": "American"
+}
