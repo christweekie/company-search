@@ -1,10 +1,10 @@
 #  Spring Exercise
 
-This project is a sample of Java application, intended to provide a solution to the exercise described at https://github.com/RiskNarrative/spring-exercise
+This project is a sample of Java application, intended to provide a solution to the exercise described at [REDACTED]
 
 It uses several key technologies
 - Spring Boot 
-- Spring HTTP interface; new with Spring Framework 6 / Spring Boot 3. Declarative HTTP services, used here to access resources at https://exercise.trunarrative.cloud/TruProxyAPI/rest/Companies/v1/. I am well familiar with using the Spring Reactive WebClient and older (deprecated RestTemplate) for accessing REST services but decided to use an alternative on this occasion.  
+- Spring HTTP interface; new with Spring Framework 6 / Spring Boot 3. Declarative HTTP services, used here to access resources at [REDACTED]. I am well familiar with using the Spring Reactive WebClient and older (deprecated RestTemplate) for accessing REST services but decided to use an alternative on this occasion.  
 - Spring Data JPA; for persisting data 
 - Lombok; for annotated processing to generate various types of code (e.g. getters / setters, constructors, loggers, etc)
 - Wiremock; for stubbing and simulation of server responses
@@ -21,7 +21,7 @@ Optional
 
 ### Installation / Running the project
 
-To run the Spring Boot app, this can be done in the normal way with the maven spring boot plugin. The value for the TruProxy API is set from an environment variable. It can be set in as shown.
+To run the Spring Boot app, this can be done in the normal way with the maven spring boot plugin. The value for the API is set from an environment variable. It can be set in as shown.
 
 The server starts on port 8080 so this must be available, although it can be overridden. This also starts up the H2 instance.
 
